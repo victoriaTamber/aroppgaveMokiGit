@@ -9,12 +9,33 @@
 </head>
 <body>
   <div id="wrapper">
-    <div class="menuNav">
-        <div class="logo">
-
+    <div id="menyNav">
+      <!-- meny og navigasjon  -->
+      <div class="logoMOKI_img">
+        <img src="../images/MOKI_logo.svg" alt="Logoen til MOKI, grønn søppelkasse">
+      </div>
+    
+      <div class="menyNavn">
+        <a href="../index.html"> <h1>Moki.ub</h1> </a>
+      </div>
+    
+      <!-- navigasjon (css og java script) -->                                                                                                           
+      <div class="nav">
+        <button onclick="navFunction()" class="navButton">Meny</button>
+          <div id="dropdownMenu" class="navLinks">
+            <a href="../index.html">Hjem</a>
+            <a href="produkt.html">Vårt produkt</a>
+            <a href="omOss.html">Om oss</a>
+            <a href="FAQ.html">FAQ</a>
+            <a id="aktiv" href="forAnns.html">For ansatte</a>
+          </div>  
         </div>
+      </div> 
 
-    </div>
+      <!-- innhold til ansatte -->
+      <div class="overSkr">
+        <h2>For ansatte</h2>
+      </div>
     
 
     <div class="teamImage">
@@ -28,6 +49,10 @@
           kjøper klokke som viser hvor mye kalorier du mister ved å løpe så mye, det er ikke bare nå, men også før. En av ansatte kommer opp med å la folket se hvor mye de kaster ved hjelp av vekt, sånn at de for en 
           oversikt over dems resirkulering. Vi ser at veldig mange nå har begynt å engasjere seg rundt klima og miljø, men likevel sliter befolkningen med å resirkulere selv om vi har fargepose for de forskjellige afallstypene.</p>
     </div>
+
+
+
+
 
     <!-- nyhetsbrev -->
   <div class="newsletter">
