@@ -12,29 +12,31 @@
     <div id="menyNav">
       <!-- meny og navigasjon  -->
       <div class="logoMOKI_img">
-        <img src="images/MOKI_logo.svg" height="100px" alt="Logoen til MOKI, grønn søppelkasse">
+        <img src="images/MOKI_logo.svg" height="90px" alt="Logoen til MOKI, grønn søppelkasse">
       </div>
     
       <div class="menyNavn">
-        <a href="../index.html"> <h1>Moki.ub</h1> </a>
+        <a href="./index.php"> <h1>Moki.ub</h1> </a>
       </div>
     
       <!-- navigasjon (css og java script) -->                                                                                                           
       <div class="nav">
-        <button onclick="navFunction()" class="navButton">Meny</button>
-          <div id="dropdownMeny" class="navLinks">
-            <a href="../index.html">Hjem</a>
-            <a href="produkt.html">Vårt produkt</a>
-            <a href="omOss.html">Om oss</a>
-            <a href="FAQ.html">FAQ</a>
-            <a id="aktiv" href="forAnns.html">For ansatte</a>
+        <!-- <button onclick="navFunction()" class="navKnapp">Meny</button> -->
+        <button class="navKnappDropdown">Meny</button>
+          <div class="navLenker">
+            <a id="aktiv" href="index.php">Hjem</a>
+            <a href="sider/vartProdukt.html">Vårt produkt</a>
+            <a href="sider/omOss.html">Om oss</a>
+            <a href="sider/FAQ.html">FAQ</a>
+            <a href="ansatteInnlogging.php">For ansatte</a>
           </div>  
-        </div>
-      </div> 
+      </div>
+      
+    
 
       <!-- innhold til ansatte -->
       <div class="overSkr">
-        <h2>For ansatte</h2>
+        <h2>Velkommen</h2>
       </div>
     
 
@@ -66,10 +68,9 @@
            seg? Meld deg inn på vårt nyhetsbrev!</p>
       </div>
     
-
     <div class="nyhetsbrevInnhold">
         <!-- fornavn input -->
-      <form action="nyhetsbrevIndex.php">
+      <form action="nyhetsbrevIndex.php" method="post">
         <div class="fornavnNB">
           <label for="fornavnInput">Ditt fornavn:</label>
           <input type="text" id="fornavnInput" name="Navn" placeholder="Fornavn"> 
@@ -88,7 +89,7 @@
       
         <div class="VilkarEnighet">
           <label for="avtalevilkar">Enig i vilkår </label>
-          <input type="checkbox">
+          <input type="checkbox" id="avtalevilkar">
         </div>
         <!-- abonnent knappe trykk -->
         <button type="submit" onclick="registrNB()" id="registrAbb"> Ja takk! </button>
@@ -98,14 +99,6 @@
     </div>   
   </div>
     
-
-
-
-
-
-
-
-
 
 
 
