@@ -34,7 +34,7 @@ body {
 
 /* navigasjon */
 .nav {
-    /* float: right; */
+    float: right;
 }
 
 .navKnappDropdown {
