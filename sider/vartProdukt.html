@@ -9,28 +9,29 @@
 <body>
   <div id="wrapper">
     <div id="menyNav">
-      <!-- meny og navigasjon  -->
+
       <div class="logoMOKI_img">
-        <img src="../images/MOKI_logo.svg" height="100px" alt="Logoen til MOKI, grønn søppelkasse" >
+        <img src="images/MOKI_logo.svg" alt="Logoen til MOKI">
       </div>
 
       <div class="menyNavn">
-        <a href="../index.php"> <h1>Moki.ub</h1> </a>
+        <h1>Moki.ub</h1>
       </div>
 
-<!-- navigasjon (css og java script) -->
-    <div class="nav">
-      <button onclick="myFunction()" class="navKnapp">Meny</button>
-        <div id="dropdown" class="navLinker">
-          <a href="../index.html">Hjem</a>
-          <a id="aktiv" href="produkt.html">Vårt produkt</a>
-          <a href="omOss.html">Om oss</a>
-          <a href="forAnns.html">For ansatte</a>
-        </div>  
-      </div>
+    <!-- navigasjon (css og java script) -->
+      <div class="nav">
+        <button onclick="navFunction()" class="navKnapp">Meny</button>
+          <div id="dropdown" class="navLenkerDropdown">
+            <a href="../index.php">Hjem</a>
+            <a id="aktiv" href="vartProdukt.html">Vårt produkt</a>
+            <a href="omOss.html">Om oss</a>
+            <a  href="FAQ.html">FAQ</a>
+            <a href="../ansatteInnlogging.php">For ansatte</a>
+          </div>  
+        </div>          
     </div>
    
-
+ 
     <!-- innhold om produktet -->
     <div class="overSkr">
       <h2>Vårt produkt</h2>
