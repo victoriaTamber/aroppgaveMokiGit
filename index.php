@@ -25,10 +25,10 @@
         <button onclick="navFunction()" class="navKnapp">Meny</button>
           <div id="dropdown" class="navLenkerDropdown">
             <a id="aktiv" href="index.html">Hjem</a>
-            <a href="sider/produkt.html">Vårt produkt</a>
+            <a href="sider/vartProdukt.html">Vårt produkt</a>
             <a href="sider/omOss.html">Om oss</a>
             <a href="sider/FAQ.html">FAQ</a>
-            <a href="sider/forAnns.html">For ansatte</a>
+            <a href="ansatteInnlogging.php">For ansatte</a>
           </div>  
         </div>          
     </div>
@@ -69,25 +69,29 @@
     <!-- abonnent innhold -->
 
     <div class="nyhetBInnh" >
-    <form action="nyhetsbrevIndex.php" method="post">  
+    <form action="nyhetsbrevIndex.php" method="post" >  
       
       <!-- navn input -->
       <div class="navnNB">
         <label for="fornavnInput">Ditt fornavn:</label>
-        <input type="text"  name="fornavnInput" placeholder="Navn"> 
+        <input type="text" required name="fornavnInput" placeholder="Navn" required> 
 
         <label for="etternavnInput">Ditt etternavn:</label>
-        <input type="text" name="etternavnInput" placeholder="Navn"> 
+        <input type="text" name="etternavnInput" placeholder="Navn" required> 
       </div>
        
       <!-- epost input --> 
       <div class="epostNB"> 
         <label for="epostInput">E-post:</label>
-        <input type="text" name="epostInput" placeholder="E-post">
+        <input type="email" name="epostInput" placeholder="E-post" required>
       </div> 
-      
+
+      <div class="brukerVilkar">
+        <label for="brukervilkarInput">Enig i vilkårene?</label>
+        <input type="checkbox" name="brukervilkarInput">
+      </div>
       <!-- abonnent knappe trykk -->
-      <button type="submit" onclick="registrNB()" id="registrAbb"> Ja takk! </button>
+      <button type="submit" id="registrAbb"> Ja takk! </button>
       </div>
     </form>
   </div>
@@ -129,10 +133,3 @@
 
 
 
-  //if($result) {
-   // $row = mysql_fetch_assoc($result)
-    //$_SESSION ['idnyhetsbrev'] = $row['idnyhetsbrev']
-
- // }
-    
-?>

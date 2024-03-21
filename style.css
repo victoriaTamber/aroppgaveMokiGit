@@ -198,6 +198,35 @@ a:hover {
 
 
 
+
+
+/* ansatte inlogging */
+.loginInputAnsatte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 0 20%; 
+}
+
+/* innlogging til publingssystemet*/
+.loginAns, .administratorAgreement {
+  border: 2px solid black;
+  margin-top: 2%;
+}
+.loggInnForAnsatte a:hover {
+  background-color: #84BC41;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 .footer {
     display: flex;

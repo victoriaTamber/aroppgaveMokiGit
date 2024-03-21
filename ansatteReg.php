@@ -6,6 +6,7 @@
   <title>Document</title>
 </head>
 <body>
+  <div id="wrapper"></div>
   <div class="nyBruker">
       <form action="regNyAnsatt.php" method="post">
         <h2>Lag en ny bruker</h2>
@@ -63,5 +64,5 @@
     //brukernavn og passord for inlogging
     $brukernavn = ($_POST['brukernavnReg']);
     $passord = ($_POST['passordReg']);
-    
+
     $hashed_password = hash("sha256", $passord);

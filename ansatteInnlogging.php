@@ -22,14 +22,15 @@
       <div class="nav">
         <button onclick="navFunction()" class="navKnapp">Meny</button>
           <div id="dropdown" class="navLenkerDropdown">
-            <a id="aktiv" href="index.html">Hjem</a>
-            <a href="sider/produkt.html">Vårt produkt</a>
+            <a href="index.php">Hjem</a>
+            <a href="sider/vartProduktprodukt.html">Vårt produkt</a>
             <a href="sider/omOss.html">Om oss</a>
             <a href="sider/FAQ.html">FAQ</a>
-            <a href="sider/forAnns.html">For ansatte</a>
+            <a id="aktiv" href="ansatteInnlogging.php">For ansatte</a>
           </div>  
         </div>          
     </div>
+
 
 
       <!-- log in for annsatte brukernavn og passord  -->
@@ -40,7 +41,8 @@
           <input type="text" name="brukernavn" placeholder="Brukernavn"><br/>
           <label>Passord: </label>
           <input type="password" name="passord" placeholder="Passord"><br/>
-          <button type="submit" name="login">Login</button><br/>
+          
+          <button type="submit" class="loginAns" name="login">Login</button><br/>
 
           <div class="administratorAgreement">
           <label for="adminRettigheter">Administrator</label>
@@ -51,7 +53,7 @@
 
     </div>
 
-    
+<script src="script.js"></script>
 </body>
 </html>
 
@@ -62,12 +64,4 @@
     include "db_kobling.php";
     
     
-  if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    $fornavn = $_POST[$_fornavn];
-    $etternavn = $_POST[$_etternavn];
-    $epost = $_POST[$_epost];
-
-
-
-  $sql = "SELECT * FROM ansatt WHERE (fornavn, etternavn, epost) VALUES ('$fornavn', '$etternavn', '$epost')"; 
-  }
+ 
