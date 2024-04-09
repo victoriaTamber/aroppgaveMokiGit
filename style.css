@@ -159,7 +159,7 @@ a:hover {
     background-color: #84BC41;
   }
   
-  dt {
+  .innledTekst dl {
     display: flex;
     padding-top: 2px;
   }

@@ -24,5 +24,3 @@
       $row ['brukernavnAnns'] == $brukernavnAnns && $row ['passordAnns'] == $passordAnns;
 
     }
-
-?>    

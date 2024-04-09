@@ -69,7 +69,7 @@
     <!-- abonnent innhold -->
 
     <div class="nyhetBInnh" >
-    <form action="nyhetsbrevIndex.php" method="post" >  
+    <form action="../back/nyhetsbrevForside.php" method="POST" >  
       
       <!-- navn input -->
       <div class="navnNB">
@@ -77,7 +77,7 @@
         <input type="text" id="fornavnInput" name="fornavnInput" placeholder="Navn" required> 
 
         <label for="etternavnInput">Ditt etternavn:</label>
-        <input type="text" id="etternavnInput" name="etternavnInput" placeholder="Navn" required> 
+        <input type="text" id="etternavnInput" name="etternavnInput" placeholder="Etternavn" required> 
       </div>
        
       <!-- epost input --> 
@@ -127,6 +127,7 @@
   
   </div>
   <script src="../script.js"></script>
+</body>
 </html>
 
 
