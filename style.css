@@ -159,6 +159,10 @@ a:hover {
     background-color: #84BC41;
   }
   
+  dt {
+    display: flex;
+    padding-top: 2px;
+  }
 
 
 
@@ -219,6 +223,22 @@ a:hover {
 
 
 
+/* hjelpemidler sider som vilkaar,  */
+#menyNavHjelpemidler {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+
+  border: 2px solid blue;
+}
+
+.menyTittelHjelpemidler {
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+
+border: 2px solid blue;
+}
 
 
 

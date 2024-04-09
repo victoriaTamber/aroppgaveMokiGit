@@ -11,7 +11,7 @@
      <div id="menyNav">
 
       <div class="logoMOKI_img">
-        <img src="images/MOKI_logo.svg" alt="Logoen til MOKI">
+        <img src="../images/MOKI_logo.svg" alt="Logoen til MOKI">
       </div>
 
       <div class="menyNavn">
@@ -53,7 +53,7 @@
 
     </div>
 
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
 

@@ -89,6 +89,7 @@
       <div class="brukerVilkar">
         <label for="brukervilkarInput">Enig i vilkårene?</label>
         <input type="checkbox" id="brukervilkarInput" name="brukervilkarInput">
+        <p>Trykk her for våre <a href="vilkar.html" target="_blank">vilkår og betingelser</a></p>
       </div>
       <!-- abonnent knappe trykk -->
       <button type="submit" id="registrAbb"> Ja takk! </button>

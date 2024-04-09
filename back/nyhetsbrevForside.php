@@ -1,6 +1,6 @@
 <?php 
-//session_start();
-include "db_kobling.php";
+session_start();
+include "../db_kobling.php";
 
 
  //Nyhetsbrev rgistrering 

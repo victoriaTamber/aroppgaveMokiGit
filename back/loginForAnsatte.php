@@ -1,5 +1,5 @@
 <?php 
-
+//logg inn for ansatte 
   session_start();
     include "../db_kobling.php";
 
