@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>AnsatteInlogging</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
         <button onclick="navFunction()" class="navKnapp">Meny</button>
           <div id="dropdown" class="navLenkerDropdown">
             <a href="index.php">Hjem</a>
-            <a href="sider/vartProduktprodukt.html">Vårt produkt</a>
+            <a href="sider/vartProdukt.html">Vårt produkt</a>
             <a href="sider/omOss.html">Om oss</a>
             <a href="sider/FAQ.html">FAQ</a>
             <a id="aktiv" href="ansatteInnlogging.php">For ansatte</a>
@@ -33,16 +33,16 @@
 
 
 
-      <!-- log in for annsatte brukernavn og passord  -->
+      <!-- login for annsatte brukernavn og passord  -->
       <div class="loginInputAnsatte">
-        <form action="loginforAnsatte.php" method="post">
+        <form action="../back/loginForAnsatte" method="post">
           <h2>Login:</h2>
           <label>Brukernavn: </label>
           <input type="text" name="brukernavn" placeholder="Brukernavn"><br/>
           <label>Passord: </label>
           <input type="password" name="passord" placeholder="Passord"><br/>
           
-          <button type="submit" class="loginAns" name="login">Login</button><br/>
+          <button type="submit" class="loginAns" action="../ansatteSider/ansatteReg" name="login">Login</button><br/>
 
           <div class="administratorAgreement">
           <label for="adminRettigheter">Administrator</label>
@@ -58,10 +58,8 @@
 </html>
 
 
-<?php 
 
-  session_start();
-    include "db_kobling.php";
-    
+
+
     
  
