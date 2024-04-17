@@ -69,7 +69,7 @@
     <!-- abonnent innhold -->
 
     <div class="nyhetBInnh" >
-    <form action="../back/nyhetsbrevForside.php" method="POST" >  
+    <form action="../back/nyhetsbrevForside.php" method="POST">
       
       <!-- navn input -->
       <div class="navnNB">

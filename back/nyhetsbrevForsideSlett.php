@@ -4,4 +4,6 @@
 session_start();
 include "../db_kobling.php";
 
+
+  
 ?>

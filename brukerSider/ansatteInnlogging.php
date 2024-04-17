@@ -20,22 +20,22 @@
 
     <!-- navigasjon (css og java script) -->
       <div class="nav">
-        <button onclick="navFunction()" class="navKnapp">Meny</button>
+      <button onclick="navFunction()" class="navKnapp">Meny</button>
           <div id="dropdown" class="navLenkerDropdown">
-            <a href="index.php">Hjem</a>
-            <a href="sider/vartProdukt.html">Vårt produkt</a>
-            <a href="sider/omOss.html">Om oss</a>
-            <a href="sider/FAQ.html">FAQ</a>
+            <a href="forside.php">Hjem</a>
+            <a href="vartProdukt.html">Vårt produkt</a>
+            <a href="omOss.html">Om oss</a>
+            <a href="FAQ.html">FAQ</a>
             <a id="aktiv" href="ansatteInnlogging.php">For ansatte</a>
           </div>  
-        </div>          
+        </div>           
     </div>
 
 
 
       <!-- login for annsatte brukernavn og passord  -->
       <div class="loginInputAnsatte">
-        <form action="../back/loginForAnsatte" method="post">
+        <form action="../back/ansatteBack/loginForAnsatte" method="post">
           <h2>Login:</h2>
           <label>Brukernavn: </label>
           <input type="text" name="brukernavn" placeholder="Brukernavn"><br/>
@@ -45,8 +45,8 @@
           <button type="submit" class="loginAns" action="../ansatteSider/ansatteReg" name="login">Login</button><br/>
 
           <div class="administratorAgreement">
-          <label for="adminRettigheter">Administrator</label>
-          <input type="checkbox">
+          <label for="adminRettigheter">Administrator</label><br>
+          <input type="checkbox" value="Registrer">
         </div>
         </form>
       </div>

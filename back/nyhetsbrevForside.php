@@ -1,45 +1,28 @@
 <?php 
-session_start();
+ session_start();
 include "../db_kobling.php";
 
-//Nyhetsbrev rgistrering 
- $fornavn = ($_POST['fornavnInput']);
- $etternavn = ($_POST['etternavnInput']);
-//epost registrering for nye kunder
- $epost = ($_POST['epostInput']);
+$fornavn = ($_POST['fornavnInput']);
+$etternavn = ($_POST['etternavnInput']);
+$epostN = ($_POST['epostInput']);
 
-// //skjekker om dem har innhold eller ikke
- if(empty($fornavn)) {
-   header("Location: forside.php?error=navn er påkrevd");
-   exit();  
- } else if (empty($etternavn)){
-   header("Location: forside.php?error=etternavn er påkrevd");
-   exit();
- } else if (empty($epost)){
-   header("Location: forside.php?error=epost er påkrevd");
-   exit();
- };
+if(empty($fornavn)) {
+  header("Location: forside.php?error=navn er påkrevd");
+  exit();  
+} else if (empty($etternavn)){
+  header("Location: forside.php?error=etternavn er påkrevd");
+  exit();
+} else if (empty($epostN)){
+  header("Location: forside.php?error=epost er påkrevd");
+  exit();
+};
 
-
-
-//skjekker om tabellen er tom
 $sql = "SET FOREIGN_KEY_CHECKS=0";
 $result = mysqli_query($conn, $sql);
 
-$sql = "INSERT INTO arsoppgaveMoki.nyhetsbrevkunde (fornavn, etternavn, epost) VALUES ('$fornavn', '$etternavn', '$epost')";
+$sql = "INSERT INTO arsoppgaveMoki.nyhetsbrevkunde (fornavn, etternavn, epost) VALUES ('$fornavn', '$etternavn', '$epostN')";
 $result = mysqli_query($conn, $sql) or die('Error querying database.');
 
-//$sql = "SELECT * FROM nyhetsbrevKunde WHERE fornavn = '$fornavn' AND etternavn = '$etternavn' AND epost = '$epost'";
-//$result = mysqli_query($conn, $sql);
-
-
-
-//slette bruker
-
-
-
-
-// beveger seg til nyhetsbrev.php i brukerSiden
 header("Location: ../brukerSider/nyhetsbrev.php");
 exit();
 

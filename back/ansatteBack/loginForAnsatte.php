@@ -5,6 +5,9 @@
 
     $brukernavnAnns = $_POST["brukernavn"];
     $passordAnns = $_POST["passord"];
+    //setter admin rettigheter til en satt verdi til
+    $adminRettigheter = isset($_POST["adminRettigheter"]) ? 1 : 0;   
+    //hasher passordet
     $hashed_passordAnns = hash("sha256", $passordAnns);
 
     if (empty($brukernavnAnns)) {
@@ -24,3 +27,5 @@
       $row ['brukernavnAnns'] == $brukernavnAnns && $row ['passordAnns'] == $passordAnns;
 
     }
+
+    ?>    
