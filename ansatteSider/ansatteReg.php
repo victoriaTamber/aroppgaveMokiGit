@@ -9,7 +9,7 @@
   <!-- registrere nye ansatte -->
   <div id="wrapper"></div>
   <div class="nyBruker">
-    <form action="./back/registreringAnsatte.php" method="post">
+    <form action="../back/registreringAnsatte.php" method="post">
       <h2>Lag en ny bruker</h2>
       <!-- registrere navn -->
       <label>Postnummer:</label>

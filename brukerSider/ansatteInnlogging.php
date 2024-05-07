@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ab86e6e481.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style.css">
     <title>AnsatteInlogging</title>
 </head>
@@ -51,7 +52,32 @@
         </form>
       </div>
 
+
+
+
+      
+      <!-- footer til sidene -->
+    <div class="footer">
+    <!-- kontakt epost -->
+      <div class="kontakt">
+        <h3>Kontakt</h3>
+        <a href="mailto:">Send mail</a>
+      
+      </div> 
+    <!-- informasjon link til designmanual -->
+      <div class="inform">
+        <h3>Informasjon</h3>
+        <a href="sider/designMan.html">Design manual</a>
+      </div>
+    <!--  sosiale medier  Youtube og Instagram -->
+      <div class="sosMedie">
+        <h3>Følg oss</h3>
+          <a href="https://www.instagram.com/moki.ub"> <i class="fa-brands fa-instagram fa-lg"></i></a>
+          <a href="https://www.youtube.com/@mokiub4920"> <i class="fa-brands fa-youtube fa-lg"></i></a>
+      </div>
     </div>
+
+ </div>
 
 <script src="../script.js"></script>
 </body>

@@ -1,7 +1,5 @@
 
 <?php 
-session_start();
-include "../db_kobling.php";
 
 //Nyhetsbrev rgistrering 
  $fornavn = ($_POST['fornavnInput']);

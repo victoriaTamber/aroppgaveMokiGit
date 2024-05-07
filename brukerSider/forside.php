@@ -93,8 +93,10 @@
       </div>
       <!-- abonnent knappe trykk -->
       <button type="submit" id="registrAbb"> Ja takk! </button>
+      
       </div>
     </form>
+    <a href="loginNyhetsbrev.php"><button type="submit">Logg inn</button></a>
   </div>
   
 
@@ -112,7 +114,7 @@
     <!-- informasjon link til designmanual -->
       <div class="inform">
         <h3>Informasjon</h3>
-        <a href="sider/designMan.html">Design manual</a>
+        <a href="designmanual.html">Design manual</a>
       </div>
     <!--  sosiale medier  Youtube og Instagram -->
       <div class="sosMedie">

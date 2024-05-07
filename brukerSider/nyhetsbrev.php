@@ -23,9 +23,18 @@
        
      </div>
      
+     <a href="forside.php"><button>forside</button></a>
      
   </div>
 
+
+  <div class="slettNyhetBruker">
+    <form action="../back/nyhetbrevForsideSlett">
+      <input type="submit" value="Slett nyhetsbrev" name="idnyhetsbrev" >
+      
+    </form>
+
+  </div>
  
     
 

@@ -260,3 +260,9 @@ border: 2px solid blue;
     padding-right: 3%;
     color: black;
   }
+  
+  .designMan {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+  }

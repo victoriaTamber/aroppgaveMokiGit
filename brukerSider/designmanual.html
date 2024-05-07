@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>designmanual</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+    <div id="wrapper">
+        <!-- meny og navigasjon  -->
+        <div id="menyNav">
+    
+          <div class="logoMOKI_img">
+            <img src="../images/MOKI_logo.svg" alt="Logoen til MOKI">
+          </div>
+    
+          <div class="menyNavn">
+            <h1>Moki.ub</h1>
+          </div>
+    
+        <!-- navigasjon (css og java script) -->
+          <div class="nav">
+            <button onclick="navFunction()" class="navKnapp">Meny</button>
+              <div id="dropdown" class="navLenkerDropdown">
+                <a id="aktiv" href="forside.php">Hjem</a>
+                <a href="vartProdukt.html">Vårt produkt</a>
+                <a href="omOss.html">Om oss</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="ansatteInnlogging.php">For ansatte</a>
+              </div>  
+            </div>          
+        </div>
+    
+    
+        <!-- innhold til designmanualen siden -->
+          <div class="overSkr">
+            <h2>Mokis designmanual</h2>
+          </div>
+
+          <div class="designMan">
+            <iframe src="./lenker/designmanual_Moki.pdf" width="1000" height="800"></iframe>
+          </div>
+    </div>
+    <script src="../script.js"></script>      
+</body>
+</html>
