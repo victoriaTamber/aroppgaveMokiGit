@@ -24,12 +24,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $sql = "INSERT INTO arsoppgavemoki.ansatt (postnummer, poststed, fornavn, etternavn, kjonn, brukernavn, passord, jobbTelefonnummer, jobbEpost, ansatt_tilgang) VALUES ('$postnummer', '$poststed', '$fornavn', '$etternavn', '$kjonn', '$brukernavn', '$hashed_password', '$jobbTelefonnummer', '$jobbEpost', '$adminRettigheter')";
   $result = mysqli_query($conn, $sql);
 
+  // Redirect to the desired page
+  header("Location: ../../ansatteSider/ansatteForside.php");
+  exit();
+  
   if (!$result) {
     die('Error querying database: ' . mysqli_error($conn));
   }
 
-  // Redirect to the desired page
-  header("Location: ../../ansatteSider/ansatteForside.php");
-  exit();
 }
 ?>

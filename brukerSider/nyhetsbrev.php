@@ -29,8 +29,11 @@
 
 
   <div class="slettNyhetBruker">
-    <form action="../back/nyhetbrevForsideSlett">
-      <input type="submit" value="Slett nyhetsbrev" name="idnyhetsbrev" >
+    <form action="../back/nyhetsbrevForsideSlett.php" method="GET">
+    <h2>Slett bruker</h2>
+    
+      Bruker epost: <input type="email" name="slettnyhetsbrevBruker" required><br>
+      <input type="submit" value="Slett nyhetsbrev" name="slettnyhetsbrevBruker" >
       
     </form>
 

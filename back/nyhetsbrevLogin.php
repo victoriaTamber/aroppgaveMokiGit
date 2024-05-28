@@ -6,6 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $epost = $_POST["emailNlogin"];
 
     // Perform login validation and authentication logic here
+    $sql = "SELECT * FROM nyhetsbrevkunde WHERE fornavn = ? AND etternavn = ? AND epost = ?";
+    $stmt = mysqli_prepare($conn, $sql);
 
     // flytter over til en annen side etter login
 
