@@ -31,8 +31,8 @@
   <div class="slettNyhetBruker">
     <form action="../back/nyhetsbrevForsideSlett.php" method="GET">
     <h2>Slett bruker</h2>
-    
-      Bruker epost: <input type="email" name="slettnyhetsbrevBruker" required><br>
+      <input type="email" name="email" id="" placeholder="email">
+     
       <input type="submit" value="Slett nyhetsbrev" name="slettnyhetsbrevBruker" >
       
     </form>

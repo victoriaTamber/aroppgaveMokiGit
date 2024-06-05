@@ -18,3 +18,16 @@ function navFunction() {
       }
     }
   
+
+const queryString = window.location.search
+const urlParams = new URLSearchParams(queryString)
+
+let melding;
+if (melding = urlParams.get("melding")) {
+  alert(melding)
+}
+
+let error;
+if (error = urlParams.get("melding")) {
+  alert(melding)
+}

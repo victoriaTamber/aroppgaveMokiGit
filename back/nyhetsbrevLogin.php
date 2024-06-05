@@ -11,6 +11,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // flytter over til en annen side etter login
 
+    session_start();
+    $_SESSION["epost"] = $epost;
+
     header("Location: nyhetsbrev.php");
     exit;
 } else {
